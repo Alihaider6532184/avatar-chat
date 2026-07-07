@@ -40,9 +40,9 @@ export async function initHeadTTS(
       }
 
       // Dynamic import of HeadTTS from local public folder
-      // @ts-ignore - Ignore TypeScript module resolution for public browser assets
       const { HeadTTS } = await import(
         /* webpackIgnore: true */
+        // @ts-ignore - Ignore TypeScript module resolution for public browser assets
         '/modules/headtts.mjs'
       );
 

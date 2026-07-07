@@ -21,6 +21,7 @@ export async function initTalkingHead(container: HTMLElement): Promise<any> {
   try {
     const { TalkingHead } = await import(
       /* webpackIgnore: true */
+      // @ts-ignore - Ignore TypeScript module resolution for CDN URLs
       'https://cdn.jsdelivr.net/npm/@met4citizen/talkinghead@1.7/modules/talkinghead.mjs'
     );
 
