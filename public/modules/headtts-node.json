@@ -1,0 +1,31 @@
+{
+  "server": {
+    "port": 8882,
+    "websocket": true,
+    "rest": true,
+    "corsOrigin": "*"
+  },
+  "tts": {
+    "threads": 1,
+    "transformersModule": "@huggingface/transformers",
+    "model": "onnx-community/Kokoro-82M-v1.0-ONNX-timestamped",
+    "dtype": "fp32",
+    "device": "cpu",
+    "styleDim": 256,
+    "frameRate": 40,
+    "audioSampleRate": 24000,
+    "languages": ["en-us"],
+    "dictionaryPath": "./dictionaries",
+    "voicePath": "./voices",
+    "voices": ["af_bella"],
+    "deltaStart": -10,
+    "deltaEnd": 0,
+    "defaults": {
+      "voice": "af_bella",
+      "language": "en-us",
+      "speed": 1,
+      "audioEncoding": "wav"
+    }
+  },
+  "trace": 7
+}
